@@ -24,6 +24,7 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "discord-rpc": "^4.0.1"
+    "discord-rpc": "^4.0.1",
+    "events": "3.3.0"
   }
 }
