@@ -1,6 +1,6 @@
 ## @s1vann/rich-presence
 
-```markdown
+
 <div align="center">
 
 # 🎮 @s1vann/rich-presence
@@ -674,4 +674,4 @@ MIT © s1vann
 Report Bug · Request Feature · Star on GitHub
 
 </div>
-```
+
