@@ -6,6 +6,7 @@ Modern Discord Rich Presence Framework
 
 <img src="https://img.shields.io/npm/v/@s1vann/rich-presence?style=for-the-badge" />
 <img src="https://img.shields.io/node/v/@s1vann/rich-presence?style=for-the-badge" />
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <br />
 
 Powerful and modern Discord RPC framework for Node.js applications.
