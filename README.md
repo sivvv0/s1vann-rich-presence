@@ -242,14 +242,14 @@ const rpc = createRPC('CLIENT_ID', {
 
 ⸻
 
-⚙ Options
-
+# ⚙ Options
+```js
 Option	Type	Default
 autoReconnect	boolean	true
 reconnectInterval	number	5000
 debug	boolean	false
 transport	string	ipc
-
+```
 ⸻
 
 📋 Requirements
