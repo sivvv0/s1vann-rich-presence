@@ -1,17 +1,18 @@
+const { Client, GatewayIntentBits } = require('discord.js');
 const createRPC = require('@s1vann/rich-presence');
-const rpc = createRPC('CLIENT_ID', {
-  debug: true,
-  autoReconnect: true
-});
-rpc.on('connected', async () => {
-  console.log('Connected');
+
+const bot = new Client({ intents: [GatewayIntentBits.Guilds] });
+const rpc = createRPC('YOUR_CLIENT_ID');
+
+bot.on('ready', async () => {
+  console.log(`✅ Logged in as ${bot.user.tag}`);
+  
   await rpc.updatePresence({
-    details: 'Watching Anime',
-    state: 'Episode 5',
-    largeImageKey: 'anime',
-    startTimestamp: Date.now(),
-    buttons: rpc.buttons([
-      ['Website', 'https://example.com']
-    ])
+    details: 'Managing Discord Server',
+    state: `Serving ${bot.guilds.cache.size} servers`,
+    largeImageKey: 'bot_logo',
+    buttons: [['Invite Me', 'https://discord.com/oauth2/authorize']]
   });
 });
+
+bot.login('YOUR_BOT_TOKEN');
