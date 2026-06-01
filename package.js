@@ -1,6 +1,6 @@
 {
   "name": "@s1vann/rich-presence",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Modern Discord Rich Presence framework",
   "main": "index.js",
   "type": "commonjs",
