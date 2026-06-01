@@ -13,8 +13,7 @@
 [![License](https://img.shields.io/npm/l/@s1vann/rich-presence.svg)](https://github.com/s1vann/rich-presence/blob/main/LICENSE)
 [![Bundle Size](https://img.shields.io/bundlephobia/min/@s1vann/rich-presence.svg)](https://bundlephobia.com/package/@s1vann/rich-presence)
 
-[![Discord](https://img.shields.io/badge/Discord-Join-7289DA?logo=discord&logoColor=white)](https://discord.gg/invite)
-[![GitHub Stars](https://img.shields.io/github/stars/s1vann/rich-presence.svg)](https://github.com/s1vann/rich-presence/stargazers)
+[![GitHub Stars](https://img.shields.io/github/stars/sivvv0/rich-presence.svg)](https://github.com/sivvv0/rich-presence/stargazers)
 
 **Auto-reconnection • Queue System • Middleware • TypeScript • Zero Dependencies**
 
