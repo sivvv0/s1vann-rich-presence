@@ -27,21 +27,21 @@ A powerful, feature-rich Discord Rich Presence wrapper with auto-reconnection, q
 ## Installation
 
 ```bash
-npm install your-package-name
+npm install @s1vann/rich-presence
 ```
 
 ```bash
-yarn add your-package-name
+yarn add @s1vann/rich-presence
 ```
 
 ```bash
-pnpm add your-package-name
+pnpm add @s1vann/rich-presence
 ```
 
 Quick Start
 
 ```javascript
-const createRPC = require('your-package-name');
+const createRPC = require('@s1vann/rich-presence');
 
 // Initialize with your Discord Application Client ID
 const rpc = createRPC('YOUR_CLIENT_ID_HERE', {
