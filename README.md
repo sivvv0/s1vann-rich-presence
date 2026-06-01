@@ -5,8 +5,6 @@
 Modern Discord Rich Presence Framework
 
 <img src="https://img.shields.io/npm/v/@s1vann/rich-presence?style=for-the-badge" />
-<img src="https://img.shields.io/npm/dt/@s1vann/rich-presence?style=for-the-badge" />
-<img src="https://img.shields.io/github/license/s1vann/rich-presence?style=for-the-badge" />
 <img src="https://img.shields.io/node/v/@s1vann/rich-presence?style=for-the-badge" />
 <br />
 
