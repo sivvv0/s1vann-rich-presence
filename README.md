@@ -1,4 +1,4 @@
-## @s1vann/rich-presence
+[Doc Page](https://s1vann-rich-presence-doc.vercel.app)
 
 
 <div align="center">
