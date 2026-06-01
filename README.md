@@ -619,53 +619,10 @@ await rpc.clearPresence();
 await rpc.updatePresence(activity);
 ```
 
-📊 API Reference
-
-Constructor Options
-
-Option Type Default Description
-autoReconnect boolean true Auto-reconnect on disconnect
-reconnectInterval number 5000 Reconnect interval (ms)
-debug boolean false Enable debug logging
-transport string 'ipc' Transport method
-updateThrottle number 1000 Debounce throttle (ms)
-healthCheckInterval number 30000 Health check interval (ms)
-maxQueueSize number 100 Maximum queue size
-enableMetrics boolean true Enable metrics collection
-
-Events
-
-Event Description
-connected Connected to Discord
-disconnected Disconnected from Discord
-error Error occurred
-health:ok Connection healthy
-health:degraded Health check failed
-update:success Presence updated
-queue:overflow Queue size exceeded
-join User wants to join
-spectate User wants to spectate
-joinRequest User requested to join
-
-🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (git checkout -b feature/amazing)
-3. Commit your changes (git commit -m 'Add amazing feature')
-4. Push to the branch (git push origin feature/amazing)
-5. Open a Pull Request
 
 📄 License
 
 MIT © s1vann
-
-💬 Support
-
-· 📖 Documentation
-· 🐛 Issue Tracker
-· 💬 Discord Server
 
 ---
 
