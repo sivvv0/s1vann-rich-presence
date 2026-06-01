@@ -10,10 +10,6 @@
   "engines": {
     "node": ">=18"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sivvv0/s1vann-rich-presence.git"
-  },
   "bugs": {
     "url": "https://github.com/sivvv0/s1vann-rich-presence/issues"
   },
