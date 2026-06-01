@@ -19,7 +19,7 @@ Games • Apps • Bots • Tools • Streaming • Custom Presence
 
 ⸻
 
-✨ Features
+# ✨ Features
 
 * 🚀 Modern Discord RPC Support
 * 🔄 Auto Reconnect System
@@ -38,14 +38,14 @@ Games • Apps • Bots • Tools • Streaming • Custom Presence
 
 ⸻
 
-📦 Installation
-
+# 📦 Installation
+```js
 npm install @s1vann/rich-presence
-
+```
 ⸻
 
-🚀 Quick Start
-
+# 🚀 Quick Start
+```js
 const createRPC = require('@s1vann/rich-presence');
 const rpc = createRPC('YOUR_CLIENT_ID', {
   debug: true,
@@ -66,74 +66,74 @@ rpc.on('connected', async () => {
   });
 });
 rpc.on('error', console.error);
-
+```
 ⸻
 
-🎮 Helper Methods
+# 🎮 Helper Methods
 
-Playing
-
+**Playing**
+```js
 rpc.setPlaying('Minecraft');
-
-Watching
-
+```
+**Watching**
+```js
 rpc.setWatching('One Piece');
-
-Listening
-
+```
+# Listening
+```js
 rpc.setListening('Spotify');
-
-Streaming
-
+```
+# Streaming
+```js
 rpc.setStreaming(
   'Live Stream',
   'https://twitch.tv/example'
 );
-
+```
 ⸻
 
-⏱ Timestamp Helpers
+**⏱ Timestamp Helpers**
 
-Elapsed Time
-
+*Elapsed Time*
+```js
 rpc.updatePresence({
   details: 'Coding',
   startTimestamp: rpc.elapsed()
 });
-
-Remaining Time
-
+```
+# Remaining Time
+```js
 rpc.updatePresence({
   details: 'Movie',
   endTimestamp: rpc.remaining(3600)
 });
-
+```
 ⸻
 
-📊 Progress Helper
-
+## 📊 Progress Helper
+```js
 const progress = rpc.progress(300, 1000);
 rpc.updatePresence({
   details: 'Downloading',
   ...progress
 });
-
+```
 ⸻
 
-🔘 Buttons
-
+# 🔘 Buttons
+```js
 rpc.updatePresence({
   details: 'My Application',
   buttons: rpc.buttons([
-    ['Website', 'https://example.com'],
+    ['Website', 'https://s1vann.site'],
     ['Discord', 'https://discord.gg/example']
   ])
 });
-
+```
 ⸻
 
-🎨 Assets
-
+# 🎨 Assets
+```js
 rpc.updatePresence({
   details: 'Watching',
   ...rpc.assets(
@@ -141,99 +141,99 @@ rpc.updatePresence({
     'small-image'
   )
 });
-
+```
 ⸻
 
-🔥 Presets
+# 🔥 Presets
 
-Netflix
-
+* Netflix
+```js
 rpc.updatePresence(
   rpc.presets.netflix()
 );
-
-YouTube
-
+```
+* YouTube
+```js
 rpc.updatePresence(
   rpc.presets.youtube()
 );
-
-VS Code
-
+```
+* VS Code
+```js
 rpc.updatePresence(
   rpc.presets.vscode()
 );
-
-Gaming
-
+```
+* Gaming
+```js
 rpc.updatePresence(
   rpc.presets.gaming('Minecraft')
 );
-
+```
 ⸻
 
-🪄 Join Secrets
+# 🪄 Join Secrets
 
-Create Secret
-
+* Create Secret
+```js
 const secret = rpc.createJoinSecret({
   room: '1234'
 });
-
-Parse Secret
-
+```
+* Parse Secret
+```js
 const data = rpc.parseJoinSecret(secret);
-
+```
 ⸻
 
-📡 Events
-
+# 📡 Events
+```js
 rpc.on('connected', () => {});
 rpc.on('disconnected', () => {});
 rpc.on('join', (secret) => {});
 rpc.on('spectate', (secret) => {});
 rpc.on('joinRequest', (user) => {});
 rpc.on('error', (error) => {});
-
+```
 ⸻
 
-✅ Join Request Replies
-
+# ✅ Join Request Replies
+```js
 rpc.reply(user, 'YES');
 rpc.reply(user, 'NO');
 rpc.reply(user, 'IGNORE');
-
+```
 ⸻
 
-🧠 Queue Presence
+# 🧠 Queue Presence
 
-Useful before Discord fully connects.
-
+* Useful before Discord fully connects.
+```js
 rpc.queuePresence({
   details: 'Loading...'
 });
-
+```
 ⸻
 
-🧹 Clear Presence
-
+* 🧹 Clear Presence
+```js
 rpc.clearPresence();
-
+```
 ⸻
 
-🔌 Disconnect
-
+* 🔌 Disconnect
+```js
 rpc.disconnect();
-
+```
 ⸻
 
-🐛 Debug Mode
-
+* 🐛 Debug Mode
+```js
 const rpc = createRPC('CLIENT_ID', {
   debug: true
 });
-
-Debug logs:
+```
+*Debug logs:*
 
 * Connections
 * Reconnects
@@ -269,8 +269,8 @@ transport	string	ipc
 
 ⸻
 
-💡 Example Project
-
+# 💡 Example Project
+```js
 const createRPC = require('@s1vann/rich-presence');
 const rpc = createRPC('CLIENT_ID', {
   debug: true
@@ -282,7 +282,7 @@ rpc.on('connected', async () => {
     await rpc.setPlaying('Minecraft');
   }, 5000);
 });
-
+```
 ⸻
 
 <div align="center">
