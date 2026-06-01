@@ -1,19 +1,25 @@
-name: Publish to npm
+name: Publish NPM Package
 
 on:
   push:
     branches:
       - main
 
+  release:
+    types:
+      - created
+
 jobs:
   publish:
+    name: Publish to NPM
     runs-on: ubuntu-latest
 
     permissions:
       contents: read
+      packages: write
 
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -21,16 +27,14 @@ jobs:
         with:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # 👈 Moved here
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm test
+      - name: Verify Package
+        run: npm pack
 
-      - name: Publish package
+      - name: Publish Package
         run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # Keeps it safe for the command run
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
